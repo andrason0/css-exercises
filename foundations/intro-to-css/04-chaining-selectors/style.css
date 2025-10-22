@@ -1,1 +1,11 @@
-/* Add CSS Styling */
+/* Chained selector for the square image */
+.avatar.proportioned {
+    width: 300px;
+    height: auto;  /* retains original square proportions */
+}
+
+/* Chained selector for the distorted image */
+.avatar.distorted {
+    width: 200px;
+    height: 400px; /* hardcoded height = 2x width */
+}
