@@ -1,42 +1,57 @@
+/* Base font for the whole page */
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Paragraph styles — keeping them bold and readable */
 .para,
 .small-para {
   color: hsl(0, 0%, 0%);
   font-weight: 800;
 }
 
-.small-para {
-  font-size: 14px;
-  font-weight: 800;
-}
-
+/* Regular paragraph size */
 .para {
   font-size: 22px;
 }
 
-.confirm {
-  background: green;
-  color: white;
-  font-weight: bold;
-} 
-
+/* Button default styling — looking nice and clickable */
 .button {
   background-color: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
   font-size: 20px;
 }
 
-.child {
+/* Text inside divs — simple and clean */
+div.text {
+  color: rgb(0, 0, 0);
+  font-weight: 100;
+  font-size: 22px;
+}
+
+/* ---------------------- */
+/* SOLUTION FIXES BELOW */
+/* ---------------------- */
+
+/* Small paragraph moved here so it actually applies properly */
+.small-para {
+  font-size: 14px;
+  font-weight: 800;
+  /* Fun little note: this keeps small paragraphs readable */
+}
+
+/* Confirm button fix using ID — higher specificity beats the generic button */
+#confirm-button {
+  background: green;
+  color: white;
+  font-weight: bold;
+  /* Yay! Confirm buttons now win the style battle */
+}
+
+/* Child paragraphs inside divs — scoped properly so no conflicts */
+div .child {
   color: rgb(0, 0, 0);
   font-weight: 800;
   font-size: 14px;
-}
-
-div.text {
-  color: rgb(0, 0, 0);
-  font-size: 22px;
-  font-weight: 100;
+  /* These children are now styled safely without affecting other text */
 }
