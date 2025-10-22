@@ -1,1 +1,30 @@
-/* Add CSS Styling */
+/* Container to hold both boxes side by side */
+.container {
+    display: flex;
+    gap: 20px;               /* space between boxes */
+    justify-content: center;  /* center boxes horizontally */
+    align-items: center;      /* center boxes vertically if needed */
+    margin-top: 50px;         /* spacing from top of page */
+}
+
+/* Shared styles for both elements */
+.first, .second {
+    font-size: 28px;
+    font-family: Helvetica, "Times New Roman", sans-serif;
+    padding: 20px;
+    text-align: center;
+    border-radius: 0;         /* sharp corners */
+    border: 2px solid black;  /* small black outline */
+    width: 200px;              /* fixed width to make boxes uniform */
+}
+
+/* Unique styles */
+.first {
+    background-color: black;
+    color: white;
+}
+
+.second {
+    background-color: yellow;
+    color: black;
+}
