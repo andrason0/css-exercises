@@ -1,1 +1,23 @@
-/* Add CSS Styling */
+/* All odd numbered elements */
+.odd {
+    background-color: #ffc0cb; /* light pink */
+    font-family: Verdana, "DejaVu Sans", sans-serif;
+}
+
+/* Second element (unique ID) */
+#second {
+    color: rgb(0, 0, 255); /* blue */
+    font-size: 36px;
+}
+
+/* Third element (multiple classes) */
+.third {
+    font-size: 24px; /* in addition to .odd styles */
+}
+
+/* Fourth element (unique ID) */
+#fourth {
+    background-color: #90ee90; /* light green */
+    font-size: 24px;
+    font-weight: bold;
+}
